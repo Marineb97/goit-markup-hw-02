@@ -2,6 +2,11 @@
   --main-font-family: "Roboto", sans-serif;
   --accent-color: #404bbf;
   --secondary-text-color: #434455;
+  --menu-color:#2E2F42;
+  --background-color:#2e2f42;
+  --text-color:#434455;
+  --btn-background-color:#F4F4FD;
+
 }
 
 .list {
@@ -18,7 +23,8 @@ button {
 
 body {
   font-family: var(--main-font-family);
-  color: #2e2f42;
+  color: var (--text-color);
+  background-color:#FFFFFF;
 }
 
 /* header */
@@ -27,6 +33,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--menu-color);
 }
 
 .menu-link:hover,
@@ -38,7 +45,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.17;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
@@ -49,27 +56,25 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.17;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
 }
-.contact-mail {
+.page-adress {
+    font-style: normal
+}
+
+.contact-list {
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
-.contact-tel {
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
-}
+
 .contact-tel:hover,
 .contact-tel:focus {
   color: var(--accent-color);
@@ -80,6 +85,9 @@ body {
 }
 
 /* hero */
+.hero {
+    background-color: var(--background-color);
+}
 
 .main-title {
   font-weight: 700;
@@ -87,7 +95,7 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  /* color: #FFFFFF; */
+  color: #FFFFFF
 }
 .modal-open-btn {
   font-weight: 500;
@@ -130,24 +138,35 @@ body {
   color: var(--secondary-text-color);
 }
 
+/* Employees */
+.employees {
+    background-color: #F4F4FD
+}
+.employees-list-item {
+    background-color: #FFFFFF 
+}
+
 /* footer */
+.footer {
+   background-color: var(--background-color);
+}
 .logos {
   font-family: "Raleway";
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.17;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  /* color: #F4F4FD; */
+  color: #F4F4FD;
 }
 .footer-text {
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  /* color: #F4F4FD; */
+  color: #F4F4FD;
 }
 
 /* Portfolio */
@@ -161,6 +180,7 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   color: #4d5ae5;
+  background-color: var(--btn-background-color);
 }
 .portfolio-menu-open-btn:hover,
 .portfolio-menu-open-btn:focus {
