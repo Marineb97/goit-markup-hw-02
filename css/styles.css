@@ -23,7 +23,7 @@ button {
 
 body {
   font-family: var(--main-font-family);
-  color: var (--text-color);
+  color: var(--secondary-text-color);
   background-color:#FFFFFF;
 }
 
@@ -75,14 +75,11 @@ body {
   color: var(--secondary-text-color);
 }
 
-.contact-tel:hover,
-.contact-tel:focus {
+.contact-list:hover,
+.contact-list:focus {
   color: var(--accent-color);
 }
-.contact-mail:hover,
-.contact-mail:focus {
-  color: var(--accent-color);
-}
+
 
 /* hero */
 .hero {
@@ -123,6 +120,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--menu-color);
 }
 .menu-title {
   font-weight: 500;
