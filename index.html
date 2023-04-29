@@ -5,57 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html">WebStudio</a>
-        <ul>
-          <li><a href="">Studio</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Contacts</a></li>
+    <!-- header -->
+    <header class="page-header">
+      <nav class="page-nav">
+        <a class="logo link" href="./index.html"
+          >Web<span class="log">Studio</span>
+        </a>
+
+        <ul class="menu list">
+          <li class="menu-item">
+            <a class="menu-link link" href="./index.html">Studio</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link link" href="">Contacts</a>
+          </li>
         </ul>
       </nav>
-      <address>
-        <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+      <address class="page-adress">
+        <ul class="adress-list list">
+          <li class="adress-list-item">
+            <a class="contact-mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="adress-list-item">
+            <a class="contact-tel link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
         </ul>
       </address>
     </header>
+
     <main>
-      <section>
-        <h1>Effective Solutions for Your Business</h1>
-        <button type="button">Order Service</button>
+      <!-- Hero -->
+      <section class="hero">
+        <h1 class="main-title">Effective Solutions for Your Business</h1>
+        <button class="modal-open-btn" type="button">Order Service</button>
       </section>
 
-      <section>
-        <h2>Our values</h2>
-        <ul>
-          <li>
-            <h3>Strategy</h3>
-            <p>
+      <!--Values-->
+      <section class="values">
+        <h2 class="title" hidden>Our values</h2>
+        <ul class="values-menu list">
+          <li class="values-menu-item">
+            <h3 class="menu-title">Strategy</h3>
+            <p class="description">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li>
-            <h3>Punctuality</h3>
-            <p>
+          <li class="values-menu-item">
+            <h3 class="menu-title">Punctuality</h3>
+            <p class="description">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li>
-            <h3>Diligence</h3>
-            <p>
+          <li class="values-menu-item">
+            <h3 class="menu-title">Diligence</h3>
+            <p class="description">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li>
-            <h3>Technologies</h3>
-            <p>
+          <li class="values-menu-item">
+            <h3 class="menu-title">Technologies</h3>
+            <p class="description">
               Design practice focused on digital experiences. We bring forth a
               deep passion for problem-solving.
             </p>
@@ -63,27 +92,31 @@
         </ul>
       </section>
 
-      <section>
-        <h2>What are we doing</h2>
-        <ul>
-          <li>
+      <!-- Services -->
+      <section class="services">
+        <h2 class="title">What are we doing</h2>
+        <ul class="services-list list">
+          <li class="services-list-item">
             <img
+              class="services-list-img"
               src="./images/services/computer-screen.jpg"
               alt="computer screen"
               width="360"
               height="300"
             />
           </li>
-          <li>
+          <li class="services-list-item">
             <img
+              class="services-list-img"
               src="./images/services/smartphone-screens.jpg"
               alt="smartphone screens"
               width="360"
               height="300"
             />
           </li>
-          <li>
+          <li class="services-list-item">
             <img
+              class="services-list-img"
               src="./images/services/smartphone-and-computer-screens.jpg"
               alt="smartphone and computer screens"
               width="360"
@@ -93,57 +126,67 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Our Team</h2>
-        <ul>
-          <li>
+      <!-- Employees -->
+      <section class="employees">
+        <h2 class="title">Our Team</h2>
+        <ul class="employees-list list">
+          <li class="employees-list-item">
             <img
+              class="employees-list-img"
               src="./images/employees/mark-guerrero.jpg"
               alt="employee's portrait"
               width="264"
               height="260"
             />
-            <h3>Mark Guerrero</h3>
-            <p>Product Designer</p>
+            <h3 class="menu-title">Mark Guerrero</h3>
+            <p class="description">Product Designer</p>
           </li>
-          <li>
+          <li class="employees-list-item">
             <img
+              class="employees-list-img"
               src="./images/employees/tom-ford.jpg"
               alt="employee's portrait"
               width="264"
               height="260"
             />
-            <h3>Tom Ford</h3>
-            <p>Frontend Developer</p>
+            <h3 class="menu-title">Tom Ford</h3>
+            <p class="description">Frontend Developer</p>
           </li>
-          <li>
+          <li class="employees-list-item">
             <img
+              class="employees-list-img"
               src="./images/employees/camila-garcia.jpg"
               alt="employee's portrait"
               width="264"
               height="260"
             />
-            <h3>Camila Garcia</h3>
-            <p>Marketing</p>
+            <h3 class="menu-title">Camila Garcia</h3>
+            <p class="description">Marketing</p>
           </li>
-          <li>
+          <li class="employees-list-item">
             <img
+              class="employees-list-img"
               src="./images/employees/daniel-wilson.jpg"
               alt="employee's portrait"
               width="264"
               height="260"
             />
-            <h3>Daniel Wilson</h3>
-            <p>UI Designer</p>
+            <h3 class="menu-title">Daniel Wilson</h3>
+            <p class="description">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
+
     <!-- FOOTER -->
 
-    <footer>
-      <a href="./index.html">WebStudio</a>
-      <p>
+    <footer class="footer">
+      <a class="logo link" href="./index.html"
+        >Web
+        <span class="logos">Studio</span>
+      </a>
+
+      <p class="footer-text">
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>
